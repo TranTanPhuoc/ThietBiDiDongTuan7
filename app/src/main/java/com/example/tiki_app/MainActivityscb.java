@@ -15,7 +15,7 @@ public class MainActivityscb extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activityscb);
         Intent intent = getIntent();
-        Giay giay = intent.getSerializableExtra("giay");
+        Giay giay = (Giay) intent.getSerializableExtra("giay");
         img = findViewById(R.id.imgItem);
         img.setImageResource(giay.getImg());
     }
