@@ -28,5 +28,6 @@ public class MainActivitysca extends AppCompatActivity {
         list.add(new Giay("Victor shoes-discount 50%",R.drawable.shoes_rm_yellow));
         list.add(new Giay("Lining shoes-discount 50%",R.drawable.shoes_white_removebg_preview));
         giayAdapter = new GiayAdapter(this,R.layout.item,list);
+        listView.setAdapter(giayAdapter);
     }
 }

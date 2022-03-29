@@ -3,46 +3,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/item"
-    android:layout_height="120dp">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="108dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="16dp"
+    android:layout_height="140dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/item"
         app:layout_constraintBottom_toBottomOf="parent"
-
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shoes_rm_preview_b" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/txtName"
-        android:layout_width="255dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="Nike shoes-discount 50%"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toEndOf="@+id/img"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="108dp"
+            android:layout_height="93dp"
 
-    <TextView
-        android:id="@+id/txtAbout"
-        android:layout_width="255dp"
-        android:layout_height="31dp"
-        android:gravity="center"
-        android:text="Pls touch to see detail"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toEndOf="@+id/img"
-        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/shoes_rm_preview_b" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="255dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Nike shoes-discount 50%"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="255dp"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:text="Pls touch to see detail"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
